@@ -1,0 +1,10 @@
+﻿
+    <form method="post" action="/auth/login">
+        @if (TempData["AuthMessaje"] != null)
+        {
+            <p>@TempData["AuthMessaje"]</p>
+        }
+        <input type="text" name="Username" value="" />
+        <input type="password" name="Password" value="" />
+        <button>Iniciar sesion</button>
+    </form>
